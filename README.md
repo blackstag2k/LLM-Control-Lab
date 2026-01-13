@@ -51,8 +51,7 @@ flowchart TD
 
 ## Project Structure
 
-```
-mermaid
+```mermaid
 graph TD
     A[llm-control-lab/] --> B[main.py]
     A --> C[config.py]
@@ -69,7 +68,6 @@ graph TD
 
     A --> F[outputs/]
     F --> F1[latest_result.json]
-
 ```
 
 ## Why Follow this Structure/Technique
@@ -92,4 +90,5 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
