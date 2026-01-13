@@ -33,8 +33,7 @@ In projects or tasks, each module above:
 
 ## Project Architecture
 
-```
-mermaid
+```mermaid
 flowchart TD
     A[User Input]
     B[Prompt Module / System Instructions]
@@ -48,8 +47,6 @@ flowchart TD
     C --> D
     D --> E
     E --> F
-
-```
 
 ## Project Structure
 
@@ -92,4 +89,5 @@ This project is for:
 
 * Developers building LLM-powered applications
 * Companies seeking AI automated pipelines
+
 * Anyone who wants to experiment with prompting
