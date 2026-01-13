@@ -37,9 +37,9 @@ In projects or tasks, each module above:
 flowchart TD
     A[User Input]
     B[Prompt Module / System Instructions]
-    C[OpenAI / Claude API<br/>(Importing packages & triggering API calls to Gemini)]
+    C["OpenAI or Claude API (Triggers Gemini, imports packages)"]
     D[Structured JSON Response]
-    E[Parser & Validator]
+    E[Parser and Validator]
     F[Logs and Output Files]
 
     A --> B
@@ -47,6 +47,7 @@ flowchart TD
     C --> D
     D --> E
     E --> F
+```
 
 ## Project Structure
 
@@ -91,3 +92,4 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
