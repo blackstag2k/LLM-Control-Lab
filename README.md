@@ -78,7 +78,7 @@ The techniques and workflows are used in various areas including AI Copilots and
 
 This system uses prompts that are already conceptualised and utilised in the portfolio link below:
 
-> **Prompt Engineering Portfolio**
+> **Prompt Engineering Portfolio:**
 > *https://github.com/blackstag2k*
 
 
@@ -90,5 +90,6 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
