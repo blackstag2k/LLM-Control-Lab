@@ -35,18 +35,41 @@ In projects or tasks, each module above:
 
 ```mermaid
 flowchart TD
-    A[User Input]
-    B[Prompt Module / System Instructions]
-    C["OpenAI or Claude API (Triggers Gemini, imports packages)"]
-    D[Structured JSON Response]
-    E[Parser and Validator]
-    F[Logs and Output Files]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
+    A[Start Script] --> B[Set Paths & Configs]
+    B --> C[Load all JSON files from input_json_folder]
+
+    C --> D{For each JSON file}
+    D --> E[Read topic & blog]
+    E --> F[Print "Evaluating topic"]
+    F --> G[Load evaluator prompt template]
+    G --> H[Insert topic & blog into prompt]
+
+    H --> I[Log request to requests.jsonl]
+
+    I --> J{Attempt <= MAX_RETRIES}
+    J --> K[Call Gemini API generate_content]
+    
+    K --> L{API Success?}
+
+    L -- Yes --> M[Extract response.text]
+    M --> N[Log raw response to responses.jsonl]
+    N --> O[Parse JSON from response]
+    O --> P[Append result to results list]
+    P --> D
+
+    L -- No --> Q[Log error to errors.jsonl]
+    Q --> R{More retries left?}
+
+    R -- Yes --> S[Wait RETRY_DELAY seconds]
+    S --> J
+
+    R -- No --> T[Return default zero scores]
+    T --> P
+
+    D -- No more files --> U[Write results to latest_result.json]
+    U --> V[Print saved output path]
+    V --> W[End Script]
 ```
 
 ## Project Structure
@@ -90,6 +113,7 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
 
