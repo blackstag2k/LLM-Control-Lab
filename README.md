@@ -53,7 +53,7 @@ flowchart TD
 
 ```mermaid
 graph TD
-    A[llm-control-lab/] --> B[main.py]
+    A[llm-content-evaluation/] --> B[main.py]
     A --> C[config.py]
 
     A --> D[prompts/]
@@ -90,6 +90,7 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
 
