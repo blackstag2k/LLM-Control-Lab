@@ -1,4 +1,4 @@
-# **LLM Control Lab**
+# **LLM Content Evaluation**
 
 *This is a industry grade framework for controlling and deploying Large Language Models, such as OpenAI, Claude, and Gemini using optimised/structured prompts and JSON pipelines.*
 
@@ -90,6 +90,7 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
 
