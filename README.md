@@ -1,6 +1,6 @@
 # **LLM Content Evaluation**
 
-*This is a industry grade framework for controlling and deploying Large Language Models, such as OpenAI, Claude, and Gemini using optimised/structured prompts and JSON pipelines.*
+*This is a productive workflow for controlling and deploying Large Language Models, such as OpenAI, Claude, and Gemini using optimised/structured prompts and JSON pipelines.*
 
 ## Why build this project
 
@@ -16,7 +16,7 @@ This project shows how to optimise LLM's into great **software components** usin
 
 ## What this project does
 
-This system allows you to run multiple **LLM modules**:
+This system allows you to run an important **LLM modules**:
 
 | Module       | Purpose                                       |
 | ------------ | --------------------------------------------- |
@@ -108,6 +108,7 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
 
