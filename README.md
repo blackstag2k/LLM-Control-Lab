@@ -36,23 +36,23 @@ In projects or tasks, each module above:
 ```mermaid
 flowchart TD
 
-    A[Start Script] --> B[Set Paths & Configs]
-    B --> C[Load all JSON files from input_json_folder]
+    A[Start Script] --> B[Set Paths and Configs]
+    B --> C[Load JSON files from input_json_folder]
 
-    C --> D{For each JSON file}
-    D --> E[Read topic & blog]
-    E --> F[Print "Evaluating topic"]
+    C --> D{More JSON files?}
+    D -- Yes --> E[Read topic and blog]
+    E --> F[Print evaluating topic]
     F --> G[Load evaluator prompt template]
-    G --> H[Insert topic & blog into prompt]
+    G --> H[Insert topic and blog into prompt]
 
     H --> I[Log request to requests.jsonl]
 
     I --> J{Attempt <= MAX_RETRIES}
     J --> K[Call Gemini API generate_content]
     
-    K --> L{API Success?}
+    K --> L{API success?}
 
-    L -- Yes --> M[Extract response.text]
+    L -- Yes --> M[Extract response text]
     M --> N[Log raw response to responses.jsonl]
     N --> O[Parse JSON from response]
     O --> P[Append result to results list]
@@ -67,7 +67,7 @@ flowchart TD
     R -- No --> T[Return default zero scores]
     T --> P
 
-    D -- No more files --> U[Write results to latest_result.json]
+    D -- No --> U[Write results to latest_result.json]
     U --> V[Print saved output path]
     V --> W[End Script]
 ```
@@ -77,12 +77,9 @@ flowchart TD
 ```mermaid
 graph TD
     A[llm-content-evaluation/] --> B[main.py]
-    A --> C[config.py]
 
     A --> D[prompts/]
-    D --> D1[summarizer.txt]
-    D --> D2[fact_checker.txt]
-    D --> D3[rewriter.txt]
+    D --> D1[evaluator.txt]
 
     A --> E[logs/]
     E --> E1[requests.jsonl]
@@ -113,6 +110,7 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
 
