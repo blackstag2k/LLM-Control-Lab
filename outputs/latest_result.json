@@ -1,0 +1,20 @@
+[
+  {
+    "topic": "AI Content Lead",
+    "readability_score": 83,
+    "content_structure_score": 92,
+    "engagement_score": 78
+  },
+  {
+    "topic": "Gen AI Artist",
+    "readability_score": 92,
+    "content_structure_score": 95,
+    "engagement_score": 82
+  },
+  {
+    "topic": "Prompt Engineering",
+    "readability_score": 95,
+    "content_structure_score": 98,
+    "engagement_score": 92
+  }
+]

@@ -1,0 +1,3 @@
+{"topic": "AI Content Lead", "raw_response": "```json\n{\n  \"topic\": \"AI Content Lead\",\n  \"readability_score\": 83,\n  \"content_structure_score\": 92,\n  \"engagement_score\": 78\n}\n```"}
+{"topic": "Gen AI Artist", "raw_response": "{\n  \"topic\": \"Gen AI Artist\",\n  \"readability_score\": 92,\n  \"content_structure_score\": 95,\n  \"engagement_score\": 82\n}"}
+{"topic": "Prompt Engineering", "raw_response": "{\n  \"topic\": \"Prompt Engineering\",\n  \"readability_score\": 95,\n  \"content_structure_score\": 98,\n  \"engagement_score\": 92\n}"}
