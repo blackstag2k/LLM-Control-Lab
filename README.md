@@ -20,9 +20,7 @@ This system allows you to run multiple **LLM modules**:
 
 | Module       | Purpose                                       |
 | ------------ | --------------------------------------------- |
-| Summarizer   | To reduce the detailed text into structured bullet points |
-| Fact-Checker | This helps check and verify if the output sticks to the facts or evidence |
-| Rewriter     | Helps reconstruct the output with better clarity and user-friendliness |
+| Evaluator    | To evaluate the prompt for running the script and parsing the code in .JSON files |
 
 In projects or tasks, each module above:
 
@@ -110,6 +108,7 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
 
