@@ -75,7 +75,7 @@ flowchart TD
 ```mermaid
 graph TD
     A[llm-content-evaluation/] --> B[main.py]
-
+    A --> C[input_json_folder/]
     A --> D[prompts/]
     D --> D1[evaluator.txt]
 
@@ -108,6 +108,7 @@ This project is for:
 * Companies seeking AI automated pipelines
 
 * Anyone who wants to experiment with prompting
+
 
 
 
